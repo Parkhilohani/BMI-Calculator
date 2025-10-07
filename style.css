@@ -1,0 +1,121 @@
+/* Base color */
+:root {
+    --primary-color: #2c3e50; /* Dark blue-gray */
+    --light-color: #ecf0f1;   /* Light gray for backgrounds */
+    --medium-color: #34495e;  /* Medium shade */
+    --accent-color: #95a5a6;  /* Accent for labels and guides */
+}
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+/* Form labels and inputs */
+form p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--medium-color);
+    border-radius: 8px;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--accent-color);
+}
+
+/* Calculate button */
+.button {
+    background-color: var(--medium-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Result display */
+#result {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Weight guide */
+#weight-guide {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: var(--accent-color);
+}
+
+#weight-guide h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--light-color);
+    text-decoration: underline;
+}
+
+#weight-guide p {
+    margin-bottom:6px;
+    text-align: center;
+}
+.footer-note {
+    margin-top: 110px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-align: center;
+}
