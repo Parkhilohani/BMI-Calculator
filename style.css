@@ -1,12 +1,11 @@
 /* Base color */
 :root {
-    --primary-color: #2c3e50; /* Dark blue-gray */
-    --light-color: #ecf0f1;   /* Light gray for backgrounds */
-    --medium-color: #34495e;  /* Medium shade */
-    --accent-color: #95a5a6;  /* Accent for labels and guides */
+    --primary-color: #2c3e50; 
+    --light-color: #ecf0f1;   
+    --medium-color: #34495e;  
+    --accent-color: #95a5a6;  
 }
 
-/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +40,25 @@ h1 {
     font-size: 2rem;
     color: var(--light-color);
 }
+
+.bmi-fullform {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--light-color);
+    background-color: var(--medium-color);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.bmi-fullform span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
 
 /* Form labels and inputs */
 form p {
@@ -114,7 +132,7 @@ input[type="text"]:focus {
     text-align: center;
 }
 .footer-note {
-    margin-top: 110px;
+    margin-top: 50px;
     font-size: 0.9rem;
     color: var(--accent-color);
     text-align: center;
